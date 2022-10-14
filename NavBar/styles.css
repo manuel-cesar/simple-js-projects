@@ -1,0 +1,121 @@
+html {
+  font: 2em sans-serif;
+}
+
+.logo b {
+  color: rgb(79, 115, 182);
+}
+
+body {
+  background-color: rgb(226, 226, 226);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+li:hover {
+  background-color: rgb(123, 191, 247);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+.nav-center {
+  padding: 0.2rem;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: none;
+}
+
+/* Toggle Class - show links using js  */
+.show-links {
+  height: 10rem;
+}
+
+.nav-center li {
+  margin: 0 0.2rem;
+  list-style-type: none;
+  padding: 10px 0 10px 0;
+}
+
+.nav-toggle {
+  font-size: 1rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem;
+    box-shadow: 0 5px 20px rgb(219, 219, 219);
+  }
+  .nav-header {
+    margin-bottom: 0.2rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto; /*Important */
+    display: flex;
+    transition: all 0.3s linear;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.3rem;
+    transition: all 0.3s linear;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.2rem;
+    color: #000;
+  }
+  .social-icons a:hover {
+    color: rgb(80, 109, 173);
+  }
+}

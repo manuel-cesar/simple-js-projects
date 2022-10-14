@@ -1,0 +1,74 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 20px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+#author {
+  text-transform: uppercase;
+  color: #5d8fb6;
+}
+
+#job {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#info {
+  text-align: justify;
+  color: rgb(43, 43, 43);
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 35rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 0 20px 10px rgb(197, 197, 197);
+}
+.underline {
+  margin-top: 0px;
+  border: 3px solid rgb(126, 171, 255);
+  background-color: rgb(126, 171, 255);
+  margin: 0 200px 0 200px;
+  border-radius: 2px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(126, 171, 255);
+  border: 1px solid rgb(126, 171, 255);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.btn:hover {
+  background-color: rgb(113, 153, 226);
+}
+
+#person-img {
+  max-width: 150px;
+  margin-top: 20px;
+  border-radius: 100%;
+  box-shadow: 5px -3px 0px 2px#7cc1f5;
+}
